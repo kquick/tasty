@@ -117,6 +117,7 @@ The following providers exist:
 * [tasty-inspection-testing](https://hackage.haskell.org/package/tasty-inspection-testing) —
   for compile-time testing of code properties
   (based on [inspection-testing](http://hackage.haskell.org/package/inspection-testing)).
+* [tasty-sugar](https://hackage.haskell.org) helps generate tests similar to golden tests, but with parameterized result files (based on values in the filename) and similar identification of associated files.
 
 [tasty-golden]: https://hackage.haskell.org/package/tasty-golden
 

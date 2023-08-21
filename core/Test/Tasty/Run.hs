@@ -136,7 +136,7 @@ executeTest action statusVar timeoutOpt hideProgressOpt inits fins = mask $ \res
       timed $ applyTimeout timeoutOpt $ do
         r <- wait asy
         -- Not only wait for the result to be returned, but make sure to
-        -- evalute it inside applyTimeout; see #280.
+        -- evaluate it inside applyTimeout; see #280.
         evaluate $
           resultOutcome r `seq`
           forceElements (resultDescription r) `seq`
